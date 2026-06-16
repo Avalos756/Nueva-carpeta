@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bttehh3qyff7n"]
+
+[ext_resource type="Texture2D" uid="uid://dd7e8345i051" path="res://RECURSOS/decoracion/Mossy Tileset/Mossy - FloatingPlatforms.png" id="1_50t54"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ts406"]
+size = Vector2(303, 702.5)
+
+[node name="suelodepastoalto" type="StaticBody2D" unique_id=333008979]
+
+[node name="MossyFloatingPlatforms" type="Sprite2D" parent="." unique_id=864769391]
+texture = ExtResource("1_50t54")
+region_enabled = true
+region_rect = Rect2(1601.0728, 44.870064, 442.51904, 943.17426)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1283344390]
+position = Vector2(-4, -54)
+shape = SubResource("RectangleShape2D_ts406")

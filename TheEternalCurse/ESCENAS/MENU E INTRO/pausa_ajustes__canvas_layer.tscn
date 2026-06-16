@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://u8t6chcusdi8"]
+
+[ext_resource type="Script" uid="uid://cp2np1s8mtpeh" path="res://SCRIPTS/SCRIPTS GENERALES/pausa_ajustes__canvas_layer.gd" id="1_kqjvj"]
+[ext_resource type="Texture2D" uid="uid://bcvgy5qi07n6b" path="res://IMAGENES/pause .png" id="2_ey7rc"]
+
+[node name="pausa ajustes _CanvasLayer" type="CanvasLayer" unique_id=261530031]
+process_mode = 3
+script = ExtResource("1_kqjvj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=304660203]
+offset_left = 43.0
+offset_right = 618.0
+offset_bottom = 1079.0
+color = Color(0.12591085, 0.12591085, 0.12591082, 0.42745098)
+
+[node name="menu de pausa" type="Control" parent="." unique_id=220584348]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="menu de pausa" unique_id=584876962]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.503
+anchor_bottom = 0.503
+offset_left = 62.0
+offset_top = -198.24005
+offset_right = 600.0
+offset_bottom = 445.75995
+grow_vertical = 2
+theme_override_constants/separation = 37
+
+[node name="Button" type="Button" parent="menu de pausa/VBoxContainer" unique_id=320414205]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 63
+text = "VIDEO"
+
+[node name="Button2" type="Button" parent="menu de pausa/VBoxContainer" unique_id=440419540]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 63
+text = "VOLUMEN "
+
+[node name="Button3" type="Button" parent="menu de pausa/VBoxContainer" unique_id=1698125236]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 63
+text = "CONTROLES "
+
+[node name="Button4" type="Button" parent="menu de pausa/VBoxContainer" unique_id=33013429]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 63
+text = "ATRAS"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=660569358]
+offset_left = 73.0
+offset_top = 76.0
+offset_right = 563.0
+offset_bottom = 273.0
+texture = ExtResource("2_ey7rc")
+expand_mode = 1
+
+[connection signal="pressed" from="menu de pausa/VBoxContainer/Button4" to="." method="_on_button_4_pressed"]

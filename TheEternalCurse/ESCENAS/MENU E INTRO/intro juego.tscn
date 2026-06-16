@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://ctjkjm5ne2qse"]
+
+[ext_resource type="Script" uid="uid://bkjoncng3w7aj" path="res://SCRIPTS/INTRO SCRIPT/intro_juego.gd" id="1_5rnw1"]
+[ext_resource type="VideoStream" uid="uid://c48mkgj7jxvai" path="res://VIDEOS/SYLPHIETTE   Mushoku Tensei 4K.ogv" id="1_gienr"]
+[ext_resource type="Script" uid="uid://bomerxigftpfe" path="res://SCRIPTS/INTRO SCRIPT/video_stream_player.gd" id="2_82cqt"]
+
+[node name="INTRO_VIDEO" type="Control" unique_id=562191190]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5rnw1")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1043139984]
+texture_filter = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_gienr")
+autoplay = true
+expand = true
+buffering_msec = 1000
+script = ExtResource("2_82cqt")
+
+[node name="SKIP_Button" type="Button" parent="." unique_id=236585595 node_paths=PackedStringArray("shortcut_context")]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -167.0
+offset_top = -57.0
+offset_right = -19.0
+offset_bottom = -16.0
+grow_horizontal = 0
+grow_vertical = 0
+shortcut_context = NodePath("../VideoStreamPlayer")
+text = "Omitir >>"
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="SKIP_Button" to="VideoStreamPlayer" method="_on_skip_button_pressed"]

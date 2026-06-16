@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ditjrdiaqmek"]
+
+[ext_resource type="Script" uid="uid://hgk0cqs0vatn" path="res://global_fps.gd" id="1_bom7f"]
+[ext_resource type="FontFile" uid="uid://bdi8dh5lspaap" path="res://RECURSOS/BoldPixels.ttf" id="2_4cjbp"]
+
+[node name="GlobalFPS" type="CanvasLayer" unique_id=376348888]
+layer = 100
+script = ExtResource("1_bom7f")
+
+[node name="Label" type="Label" parent="." unique_id=1001360141]
+offset_left = 18.0
+offset_top = 19.0
+offset_right = 148.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(0.6118362, 0.5677079, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_4cjbp")
+theme_override_font_sizes/font_size = 38
+text = "gggg"

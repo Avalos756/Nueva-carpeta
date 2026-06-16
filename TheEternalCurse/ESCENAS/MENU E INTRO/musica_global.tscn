@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bv88fpfl8e7b0"]
+
+[ext_resource type="AudioStream" uid="uid://chl0vr5eiolq" path="res://AUDIOS/intromenu.mp3" id="1_ervsp"]
+[ext_resource type="Script" uid="uid://bbm4riryfknde" path="res://SCRIPTS/GLOBALES/musica_global.gd" id="2_jwqmn"]
+
+[node name="MusicaGlobal" type="AudioStreamPlayer" unique_id=978143693]
+stream = ExtResource("1_ervsp")
+script = ExtResource("2_jwqmn")

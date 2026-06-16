@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://cyi76d88n0ihw"]
+
+[ext_resource type="Script" uid="uid://dfewd74rxrcpy" path="res://SCRIPTS/SCRIPTS GENERALES/config.gd" id="1_hfrqg"]
+
+[node name="Config" type="Control" unique_id=415673105]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hfrqg")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1912281918]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -228.5
+offset_top = -516.0
+offset_right = 228.5
+offset_bottom = -66.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 19
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1830237766]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 63
+text = "VIDEO"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1278915105]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 63
+text = "VOLUMEN "
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1997426646]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 63
+text = "CONTROLES"
+
+[node name="Button4" type="Button" parent="VBoxContainer" unique_id=2040401388]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 63
+text = "ATRAS "
+
+[connection signal="pressed" from="VBoxContainer/Button4" to="." method="_on_button_4_pressed"]

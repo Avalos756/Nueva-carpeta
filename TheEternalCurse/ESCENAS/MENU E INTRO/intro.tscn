@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://ccxj1gxvaedg5"]
+
+[ext_resource type="Script" uid="uid://dv8r1ih4p35we" path="res://SCRIPTS/INTRO SCRIPT/INTRO ECENE .gd" id="1_v4r00"]
+[ext_resource type="Texture2D" uid="uid://d4gdfa7y8qiyv" path="res://IMAGENES/20260430_161445_48.jpg" id="2_4uqko"]
+[ext_resource type="Texture2D" uid="uid://chmys4gthakx2" path="res://IMAGENES/20260430_161054_41.jpg" id="3_8hxpv"]
+
+[node name="INTRO" type="Control" unique_id=1955199508]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v4r00")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=111899219]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4uqko")
+stretch_mode = 5
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=580919479]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_8hxpv")
+stretch_mode = 5

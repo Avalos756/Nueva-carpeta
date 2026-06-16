@@ -1,0 +1,154 @@
+[gd_scene format=3 uid="uid://c7pdvsy58qh8"]
+
+[ext_resource type="Script" uid="uid://pugajecnq4wb" path="res://SCRIPTS/SCRIPTS GENERALES/level_1.gd" id="1_tx6v1"]
+[ext_resource type="PackedScene" uid="uid://r1r0xokiqbcm" path="res://ESCENAS/MENU E INTRO/MENU DE PAUSA IN GAME_CanvasLayer.tscn" id="2_rls7m"]
+[ext_resource type="PackedScene" uid="uid://cy4efkb8uci7n" path="res://ESCENAS/ESTRUCTURAS/suelo grande pasto.tscn" id="3_rfrym"]
+[ext_resource type="PackedScene" uid="uid://cblyr7s034egs" path="res://ESCENAS/ESTRUCTURAS/suelo mediano  pasto.tscn" id="4_1040o"]
+[ext_resource type="PackedScene" uid="uid://bttehh3qyff7n" path="res://ESCENAS/ESTRUCTURAS/suelopastoalto.tscn" id="4_rfrym"]
+[ext_resource type="PackedScene" uid="uid://btyp2ftgb0u4e" path="res://ESCENAS/ESTRUCTURAS/suelopastopequeñito.tscn" id="5_1040o"]
+[ext_resource type="PackedScene" uid="uid://w24o6x7n6lce" path="res://ESCENAS/PERSONAJE TEST/player_test.tscn" id="5_n8x0q"]
+[ext_resource type="PackedScene" uid="uid://bp3k8ogit3dbc" path="res://ESCENAS/ESTRUCTURAS/suelo pequeño pasto.tscn" id="6_g18gy"]
+[ext_resource type="PackedScene" uid="uid://dwuvreg4pe8l1" path="res://ESCENAS/fondo_decoracion_/planta_3.tscn" id="9_rfrym"]
+
+[node name="level 1" type="Node2D" unique_id=1484863637]
+process_mode = 3
+script = ExtResource("1_tx6v1")
+
+[node name="MUNDO" type="Node2D" parent="." unique_id=140775765]
+
+[node name="ESCRUCTURAS" type="Node2D" parent="MUNDO" unique_id=123202356]
+
+[node name="StaticBody2D" parent="MUNDO/ESCRUCTURAS" unique_id=1306798473 instance=ExtResource("3_rfrym")]
+position = Vector2(-1532, 1320)
+
+[node name="suelo mediano" parent="MUNDO/ESCRUCTURAS" unique_id=977882887 instance=ExtResource("4_1040o")]
+position = Vector2(616, 1255)
+
+[node name="suelo pequeño" parent="MUNDO/ESCRUCTURAS" unique_id=1529131415 instance=ExtResource("6_g18gy")]
+position = Vector2(2789, 148)
+
+[node name="suelodepastoalto" parent="MUNDO/ESCRUCTURAS" unique_id=333008979 instance=ExtResource("4_rfrym")]
+position = Vector2(-2936, 746)
+
+[node name="suelodepastoalto2" parent="MUNDO/ESCRUCTURAS" unique_id=1462517225 instance=ExtResource("4_rfrym")]
+position = Vector2(-2939, 162)
+
+[node name="suelodepastoalto3" parent="MUNDO/ESCRUCTURAS" unique_id=1777796556 instance=ExtResource("4_rfrym")]
+position = Vector2(-2939, -523)
+
+[node name="suelodepastoalto4" parent="MUNDO/ESCRUCTURAS" unique_id=2056630896 instance=ExtResource("4_rfrym")]
+position = Vector2(-2937, -1182)
+
+[node name="suelodepastoalto5" parent="MUNDO/ESCRUCTURAS" unique_id=1046160643 instance=ExtResource("4_rfrym")]
+position = Vector2(-2937, -1822)
+
+[node name="suelodepastoalto6" parent="MUNDO/ESCRUCTURAS" unique_id=1606465147 instance=ExtResource("4_rfrym")]
+position = Vector2(-2932, -2512)
+
+[node name="suelo pequeño2" parent="MUNDO/ESCRUCTURAS" unique_id=162097419 instance=ExtResource("6_g18gy")]
+position = Vector2(-5109, 1294)
+
+[node name="suelopastopequeñito" parent="MUNDO/ESCRUCTURAS" unique_id=742990912 instance=ExtResource("5_1040o")]
+position = Vector2(-6475, 332)
+
+[node name="suelodepastoalto7" parent="MUNDO/ESCRUCTURAS" unique_id=1197141781 instance=ExtResource("4_rfrym")]
+position = Vector2(1454, 863)
+
+[node name="suelodepastoalto8" parent="MUNDO/ESCRUCTURAS" unique_id=1629780036 instance=ExtResource("4_rfrym")]
+position = Vector2(1454, 193)
+
+[node name="StaticBody2D2" parent="MUNDO/ESCRUCTURAS" unique_id=1521516054 instance=ExtResource("3_rfrym")]
+position = Vector2(2206, 1266)
+
+[node name="StaticBody2D3" parent="MUNDO/ESCRUCTURAS" unique_id=1520296604 instance=ExtResource("3_rfrym")]
+position = Vector2(3822, 1266)
+
+[node name="StaticBody2D4" parent="MUNDO/ESCRUCTURAS" unique_id=1951673723 instance=ExtResource("3_rfrym")]
+position = Vector2(5425, 1266)
+
+[node name="StaticBody2D5" parent="MUNDO/ESCRUCTURAS" unique_id=1704963787 instance=ExtResource("3_rfrym")]
+position = Vector2(7067, 1266)
+
+[node name="StaticBody2D6" parent="MUNDO/ESCRUCTURAS" unique_id=507394529 instance=ExtResource("3_rfrym")]
+position = Vector2(8710, 1266)
+
+[node name="PERSONAJES" type="Node2D" parent="MUNDO" unique_id=925846733]
+
+[node name="player test" parent="MUNDO/PERSONAJES" unique_id=1844319901 instance=ExtResource("5_n8x0q")]
+position = Vector2(-1560, -5216)
+scale = Vector2(5.574612, 5.574612)
+
+[node name="Camera2D" type="Camera2D" parent="MUNDO/PERSONAJES/player test" unique_id=1002893182]
+zoom = Vector2(0.5, 0.5)
+
+[node name="Decoracion" type="Node2D" parent="MUNDO" unique_id=1841176067]
+
+[node name="planta_3" parent="MUNDO/Decoracion" unique_id=698486819 instance=ExtResource("9_rfrym")]
+position = Vector2(-401, 1278)
+autoplay = "default"
+frame_progress = 0.34923586
+
+[node name="planta_4" parent="MUNDO/Decoracion" unique_id=258900464 instance=ExtResource("9_rfrym")]
+position = Vector2(-201, 1261)
+autoplay = "default"
+
+[node name="planta_5" parent="MUNDO/Decoracion" unique_id=2143181420 instance=ExtResource("9_rfrym")]
+position = Vector2(-406, 1366)
+autoplay = "default"
+
+[node name="planta_6" parent="MUNDO/Decoracion" unique_id=276144035 instance=ExtResource("9_rfrym")]
+position = Vector2(-214, 1370)
+autoplay = "default"
+frame_progress = 0.8584323
+
+[node name="planta_7" parent="MUNDO/Decoracion" unique_id=1882647602 instance=ExtResource("9_rfrym")]
+position = Vector2(-2537, 1344)
+autoplay = "default"
+
+[node name="planta_8" parent="MUNDO/Decoracion" unique_id=709710652 instance=ExtResource("9_rfrym")]
+position = Vector2(-2771, 1345)
+autoplay = "default"
+
+[node name="planta_9" parent="MUNDO/Decoracion" unique_id=403468159 instance=ExtResource("9_rfrym")]
+position = Vector2(-3034, 1379)
+autoplay = "default"
+
+[node name="planta_10" parent="MUNDO/Decoracion" unique_id=641937670 instance=ExtResource("9_rfrym")]
+position = Vector2(-3336, 1358)
+autoplay = "default"
+
+[node name="planta_11" parent="MUNDO/Decoracion" unique_id=1048798441 instance=ExtResource("9_rfrym")]
+position = Vector2(-3626, 1345)
+autoplay = "default"
+
+[node name="planta_12" parent="MUNDO/Decoracion" unique_id=376893770 instance=ExtResource("9_rfrym")]
+position = Vector2(-3915, 1345)
+autoplay = "default"
+
+[node name="planta_13" parent="MUNDO/Decoracion" unique_id=317621893 instance=ExtResource("9_rfrym")]
+position = Vector2(-4197, 1325)
+autoplay = "default"
+
+[node name="planta_14" parent="MUNDO/Decoracion" unique_id=1336477820 instance=ExtResource("9_rfrym")]
+position = Vector2(-4467, 1345)
+autoplay = "default"
+
+[node name="planta_15" parent="MUNDO/Decoracion" unique_id=1064784343 instance=ExtResource("9_rfrym")]
+position = Vector2(-5710, 1308)
+autoplay = "default"
+
+[node name="IU" type="Node2D" parent="." unique_id=1196471462]
+
+[node name="MENU DE PAUSA IN GAME_CanvasLayer" parent="IU" unique_id=261530031 instance=ExtResource("2_rls7m")]
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=391599961]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=140316943]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
